@@ -41,4 +41,4 @@ See more deployment options: https://docs.microsoft.com/en-us/dotnet/core/deploy
 
 See the blog post for more details about setting up FusionAuth: [Securing an ASP.NET Core Razor Pages app with OAuth](https://fusionauth.io/blog/2020/05/06/securing-asp-netcore-razor-pages-app-with-oauth). That blog post was written for dotnet3.1, but the FusionAuth setup should be identical.
 
-We also have [a dotnetcore example application](https://github.com/FusionAuth/fusionauth-example-asp-netcore).
+We also have [a dotnetcore3.1 example application](https://github.com/FusionAuth/fusionauth-example-asp-netcore).
