@@ -8,8 +8,6 @@ PKCE stands for Proof Key for Code Exchange, and is often pronounced "pixie". Th
 is enabled by default by the netcore oauth library.
 
 You need to have dotnetcore installed to run this code. Please note that this application uses netcore 5.0.
-If you are using a mac, use this command `brew cask install dotnet-sdk` to setup the development
-environment.
 
 Set up FusionAuth as documented in the blog post. 
 
@@ -28,12 +26,17 @@ Visit the local webserver at `http://localhost:5000/` and sign in.
 
 ## Mac install
 
+If you are using a mac, use this command `brew cask install dotnet-sdk` to setup the development
+environment.
+
 * Open up a terminal (these instructions assume a `cmd` window)
 * `cd SampleApp`
 * Update `appsettings.json` with the FusionAuth application `ClientId` and the `Authority` as necessary.
 * `export SampleApp__ClientSecret="..."`
 * `dotnet publish -r osx.10.14-x64`
 * `bin/Debug/netcoreapp5.0/osx.10.14-x64/publish/SampleApp`
+
+Visit the local webserver at `http://localhost:5000/` and sign in.
 
 ## Misc
 
