@@ -40,7 +40,15 @@ namespace SampleApp
 
             // Configure your policies
             services.AddAuthorization(options =>
-                options.AddPolicy("Registered", policy => policy.RequireClaim("aud", Configuration["SampleApp:ClientId"])));
+                options.AddPolicy("Registered", policy => policy.RequireClaim("aud", Configuration["SampleApp:ClientId"]))
+            );
+            services.AddAuthorization(options =>
+                options.AddPolicy("Registered", policy => policy.RequireClaim("iss", Configuration["SampleApp:Authority"]))
+            );
+            //services.AddAuthorization(options =>
+                //options.AddPolicy("Registered", policy => policy.RequireClaim("userType", "premium"))
+            //);
+
             services.AddRazorPages();
 
             services.AddAuthentication(options =>
@@ -62,6 +70,7 @@ namespace SampleApp
 
                     // leave this in, otherwise the aud claim is removed. See https://stackoverflow.com/questions/69289426/missing-aud-claim-in-asp-net-core-policy-check-prevents-authorization-but-it for more
                     options.ClaimActions.Remove("aud");
+                    options.ClaimActions.Remove("iss");
 
                     options.ResponseType = "code";
                     options.RequireHttpsMetadata = false;
