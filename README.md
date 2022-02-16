@@ -9,8 +9,6 @@ is enabled by default by the netcore oauth library.
 
 You need to have dotnetcore installed to run this code. Please note that this application uses netcore 5.0.
 
-Set up FusionAuth as documented in the blog post. 
-
 ## Windows install
 
 To deploy and run on Windows, assuming you have the dotnetcore 5.0 runtime installed:
@@ -26,18 +24,8 @@ Visit the local webserver at `http://localhost:5000/` and sign in.
 
 ## Mac install
 
-<<<<<<< HEAD
-Then run these commands instead of the last three:
-* `cd SampleApp`
-* Update `appsettings.json` with the FusionAuth application `ClientId` and the `Authority` as necessary. 
-* `export SampleApp__ClientSecret="..."`
-* `dotnet publish -r osx.10.14-x64` # or whatever version makes sense
-* `bin/Debug/netcoreapp5.0/osx.10.14-x64/publish/SampleApp`
-
-See more deployment options: https://docs.microsoft.com/en-us/dotnet/core/deploying/
-
 See the blog post for more details about setting up FusionAuth: [Securing an ASP.NET Core Razor Pages app with OAuth](https://fusionauth.io/blog/2020/05/06/securing-asp-netcore-razor-pages-app-with-oauth). Note that the blog post was written with netcore3.1 in mind, but the FusionAuth setup won't differ.
-=======
+
 If you are using a mac, use this command `brew cask install dotnet-sdk` to setup the development
 environment.
 
@@ -59,4 +47,3 @@ See the blog post for more details about setting up FusionAuth: [Securing an ASP
 We also have [a dotnetcore3.1 example application](https://github.com/FusionAuth/fusionauth-example-asp-netcore).
 
 You can see additional configuration to retrieve the roles in [this forum post](https://fusionauth.io/community/forum/topic/1485/role-claims-issue-with-openidconnect-netcore5/)
->>>>>>> 6cd40dd781b72d69bf4127590f334249c65d8191
