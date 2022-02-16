@@ -9,6 +9,8 @@ is enabled by default by the netcore oauth library.
 
 You need to have dotnetcore installed to run this code. Please note that this application uses netcore 5.0.
 
+See the blog post for more details about setting up FusionAuth: [Securing an ASP.NET Core Razor Pages app with OAuth](https://fusionauth.io/blog/2020/05/06/securing-asp-netcore-razor-pages-app-with-oauth). That blog post was written for dotnet3.1, but the FusionAuth setup is identical.
+
 ## Windows install
 
 To deploy and run on Windows, assuming you have the dotnetcore 5.0 runtime installed:
@@ -26,7 +28,7 @@ Visit the local webserver at `http://localhost:5000/` and sign in.
 
 See the blog post for more details about setting up FusionAuth: [Securing an ASP.NET Core Razor Pages app with OAuth](https://fusionauth.io/blog/2020/05/06/securing-asp-netcore-razor-pages-app-with-oauth). Note that the blog post was written with netcore3.1 in mind, but the FusionAuth setup won't differ.
 
-If you are using a mac, use this command `brew cask install dotnet-sdk` to setup the development
+If you are using a mac, use this command `brew install dotnet`, to setup the development
 environment.
 
 * Open up a terminal (these instructions assume a `cmd` window)
@@ -38,11 +40,15 @@ environment.
 
 Visit the local webserver at `http://localhost:5000/` and sign in.
 
+## Claims checking
+
+You need to add policies to check claims.
+
+https://docs.microsoft.com/en-us/aspnet/core/security/authorization/policies?view=aspnetcore-6.0 has more details about checking policies.
+
 ## Misc
 
 See more deployment options: https://docs.microsoft.com/en-us/dotnet/core/deploying/
-
-See the blog post for more details about setting up FusionAuth: [Securing an ASP.NET Core Razor Pages app with OAuth](https://fusionauth.io/blog/2020/05/06/securing-asp-netcore-razor-pages-app-with-oauth). That blog post was written for dotnet3.1, but the FusionAuth setup should be identical.
 
 We also have [a dotnetcore3.1 example application](https://github.com/FusionAuth/fusionauth-example-asp-netcore).
 
