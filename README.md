@@ -1,3 +1,5 @@
+**This repo is out of date and is archived. Check out [an updated tutorial on using FusionAuth with Angular](https://fusionauth.io/docs/quickstarts/quickstart-dotnet-web) or [the updated GitHub repository](https://github.com/FusionAuth/fusionauth-quickstart-dotnet-web).**
+
 # Example ASP.NET Core web application
 
 An ASP.NET Core web application using FusionAuth as the identity server.
